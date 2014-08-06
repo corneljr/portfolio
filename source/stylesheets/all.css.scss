@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+body {
+  background: black;
+  font-family: 'Open Sans', sans-serif; }
+
+.nav li {
+  font-family: 'Kalam', cursive;
+  font-size: 1.5rem;
+  list-style: none;
+  display: inline;
+  padding: 5px;
+
+  a {
+    text-decoration: none;
+    color: white;
+
+    &:visited {
+      color: white;
+    }
+
+    &:hover {
+      color: #e74c3c;
+    }
+  }
+}
+
+.content {
+  position: relative;
+  text-align: center;
+  background-color: rgba(255,255,255,0.8);
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #2ecc71;
+}
+
+.content:before {
+  content: ' ';
+  position: absolute;
+  z-index: -1;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  border: 2px solid #3498db;
+}
+
+.name {
+  position: fixed;
+  left: 0;
+  margin-top: 50px;
+  margin-left: 30px;
+  transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  -webkit-transform: rotate(-20deg);
+
+  p {
+    display:inline;
+    left: 0;
+    font-size: 4rem;
+    color: white;
+    font-family: 'Kalam', cursive;
+  }
+}
+
+.underline {
+    transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    position: fixed;
+    margin-top: 40px;
+    margin-left: -40px;
+}
+
+#line2 {
+  position: fixed;
+}
+
+#line1 {
+  position: fixed;
+}
+
+.nav-container {
+  position: fixed;
+  transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  -webkit-transform: rotate(-20deg);
+  margin-top: 200px;
+  left: 0;
+}
+
+.project-image-container {
+  position: relative;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-image {
+  display: block;
+  width: 100%;
+}
+
+.image-info {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  position: absolute;
+
+  h3,p,h5 {
+    color: white;
+    opacity: 0;
+  }
+
+  &:hover {
+      background-color: rgba(0,0,0,0.7);
+
+      h3,p,h5 {
+        opacity: 1;
+      }
+  }
+}
+
+.blog-link {
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-color: #e74c3c;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+
+  &:hover {
+    background-color: #c0392b;
+  }
+
+  &:visited {
+    color:white;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.social-icon {
+  height: 50px;
+}
