@@ -1,4 +1,5 @@
-== Portfolio  
+Portfolio  
+==========
 
 This is for my personal portfolio site which will replace my current website which I created before Bitmaker Labs.  This will be up shortly and can be found at joshcornelius.co. 
 
