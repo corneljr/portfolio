@@ -4,11 +4,11 @@
 $(document).ready( function(){
 	$('.nav-link').on('click', function(e){
 		e.preventDefault();
-		$('.main-info').addClass('hidden')
-		$('.content').addClass('hidden')
+		$('.main-info').fadeOut();
+		$('.content').fadeOut();
 
 		var id = $(this).attr('id')
-		$('.' + id).removeClass('hidden')
+		$('.' + id).slideDown();
 	});
 });
 
