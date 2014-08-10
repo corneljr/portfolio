@@ -9,7 +9,8 @@ body {
   background-size: cover;
   background-color: rgba(0,0,0,0.7);
   background-blend-mode: multiple;
-  font-family: 'Dosis', sans-serif; }
+  font-family: 'Dosis', sans-serif; 
+}  
 
 a {
   text-decoration: none;
@@ -20,6 +21,7 @@ a {
   text-align: center;
   color: white;
   font-size: 3rem;
+  z-index: -1;
 }
 
 .content-container {
@@ -74,17 +76,26 @@ a {
   }
 }
 
+.links {
+  position: relative;
+  z-index: 10;
+}
+
 
 .main-info {
   position: absolute;
+  width: 100%;
   bottom: 50%;
-  left: 37%;
-  color:white
+  display: inline;
+  text-align: center;
+  color:white;
+  z-index: -1;
 }
 
 .name {
   font-size: 4rem;
   margin-bottom: 5px;
+  display: inline;
 }
 
 
