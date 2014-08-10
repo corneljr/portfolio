@@ -1,53 +1,51 @@
-<div class='about-link'>
-	<p class='up-arrow'>^</p>
-	<%= link_to 'About', '#', class: 'nav-link', id: 'about' %>
-</div>
-
-<%= link_to 'Projects >', '#', class: 'nav-link', id: 'projects' %>
-<%= link_to '< Blog', '#', class: 'nav-link', id: 'blog' %>
-
-<div class='contact-link'>
-	<%= link_to 'Contact', '#', class: 'nav-link', id: 'contact' %>
-	<p class='down-arrow'>^</p>
+<div class='links'>
+	<ul class='nav-links'>
+		<li><%= link_to 'About', '#', class: 'nav-link', id: 'about' %></li>
+		<li><%= link_to 'Projects', '#', class: 'nav-link', id: 'projects' %></li>
+		<li><%= link_to 'Blog', '#', class: 'nav-link', id: 'blog' %></li>
+		<li><%= link_to 'Contact', '#', class: 'nav-link', id: 'contact' %></li>
+	</ul>
 </div>
 
 <div class='main-info'>
-  <h1 class='name'>Josh Cornelius</h1>
+  <h1 class='name'><%= link_to 'Josh Cornelius', '#', class: 'name-link' %></h1>
   <p class='short-blurb'>Mechanical Engineer turned Web Developer</p>
 </div>
 
-<div class='hidden about content'>
-	<h2>About</h2>
-	<p>I am a recent mechanical engineering graduate from McMaster University. I am currently at Bitmaker Labs learning the ins and outs of web development with the goal of entering the world of startups.
-	</p>
-</div>
-<div class='hidden projects content'>
-	<h2>Current Project</h2>
-	<div class='project-image-container'>
-		<%= image_tag 'brewgarden.png', class: 'project-image' %>
-		<a href="http://brewgarden.herokuapp.com/">
-			<div class='image-info'>
-				<h3>The Brew Garden</h3>
-				<p>Crowdfunding platform for the craft beer industry</p>
-				<br>
-				<h5>Technologies Used</h5>
-				<p>Ruby on Rails, Javascript, jQuery, HTML, CSS, Foundation, and Bourbon.  </p>
-			</div>
+<div class='content-container'>
+	<div class='hidden about content'>
+		<h2>About</h2>
+		<p>I am a recent mechanical engineering graduate from McMaster University. I am currently at Bitmaker Labs learning the ins and outs of web development with the goal of entering the world of startups.
+		</p>
+	</div>
+	<div class='hidden projects content'>
+		<h2>Current Project</h2>
+		<div class='project-image-container'>
+			<%= image_tag 'brewgarden.png', class: 'project-image' %>
+			<a href="http://brewgarden.herokuapp.com/">
+				<div class='image-info'>
+					<h3>The Brew Garden</h3>
+					<p>Crowdfunding platform for the craft beer industry</p>
+					<br>
+					<h5>Technologies Used</h5>
+					<p>Ruby on Rails, Javascript, jQuery, HTML, CSS, Foundation, and Bourbon.  </p>
+				</div>
+			</a>
+		</div>
+	</div>
+	<div class='hidden blog content'>
+		<h2>Blog</h2>
+		<p>I write a blog mostly out of self interest as way to organize my thoughts, but who knows, maybe you'll find it interesting.</p>
+		<%= link_to 'Check it out!', 'http://littlebitofeverything.svbtle.com/', class: 'blog-link' %>
+	</div>
+	<div class='hidden contact content'>
+		<h2>Contact Info</h2>
+		<p>joshcornelius9@gmail.com</p>
+		<a href="https://twitter.com/corneljr">
+			<%= image_tag 'twitter.png', class: 'social-icon-twitter' %>
+		</a>
+		<a href="http://ca.linkedin.com/in/joshcornelius1">
+			<%= image_tag 'linkedin.png', class: 'social-icon-linkedin' %>
 		</a>
 	</div>
-</div>
-<div class='hidden blog content'>
-	<h2>Blog</h2>
-	<p>I write a blog mostly out of self interest as way to organize my thoughts, but who knows, maybe you'll find it interesting.</p>
-	<%= link_to 'Check it out!', 'http://littlebitofeverything.svbtle.com/', class: 'blog-link' %>
-</div>
-<div class='hidden contact content'>
-	<h2>Contact Info</h2>
-	<p>joshcornelius9@gmail.com</p>
-	<a href="https://twitter.com/corneljr">
-		<%= image_tag 'twitter.png', class: 'social-icon-twitter' %>
-	</a>
-	<a href="http://ca.linkedin.com/in/joshcornelius1">
-		<%= image_tag 'linkedin.png', class: 'social-icon-linkedin' %>
-	</a>
 </div>
